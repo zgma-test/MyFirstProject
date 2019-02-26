@@ -1,0 +1,129 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "28ff5d06-eb8b-47e9-8b7f-82e4efced27b": {
+        "id": "28ff5d06-eb8b-47e9-8b7f-82e4efced27b",
+        "parent": null,
+        "name": "MyFirstProject",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "6ddbda18-df5b-4afc-8e24-36ef9da9522b"
+        ],
+        "isRemovable": false,
+        "filePath": "MyFirstProject"
+      },
+      "6ddbda18-df5b-4afc-8e24-36ef9da9522b": {
+        "id": "6ddbda18-df5b-4afc-8e24-36ef9da9522b",
+        "parent": "28ff5d06-eb8b-47e9-8b7f-82e4efced27b",
+        "name": "lambda.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "MyFirstProject/lambda.js",
+        "code": "let AWS = require('aws-sdk');\nconst s3 = new AWS.S3();\n\nexports.handler = function (event, context, callback) {\n    s3.listObjects({\n        'Bucket': 'cf-templates-1oea0dbk84gyv-us-west-2',\n        'MaxKeys': 10,\n        'Prefix': ''\n    }).promise()\n        .then(data => {\n            console.log(data);           // successful response\n            /*\n            data = {\n             Contents: [\n                {\n                   ETag: \"\\\\\"70ee1738b6b21e2c8a43f3a5ab0eee71\\\\\"\",\n                   Key: \"example1.jpg\",\n                   LastModified: <Date Representation>,\n                   Owner: {\n                      DisplayName: \"myname\",\n                      ID: \"12345example25102679df27bb0ae12b3f85be6f290b936c4393484be31bebcc\"\n                   },\n                   Size: 11,\n                   StorageClass: \"STANDARD\"\n                },\n                {...}\n            */\n        })\n        .catch(err => {\n            console.log(err, err.stack); // an error occurred\n        });\n\n    callback(null, { \"message\": \"Successfully executed\" });\n}",
+        "triggers": [
+          {
+            "resourceName": "apigusEast1demo3demo3get",
+            "config": {}
+          }
+        ],
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        }
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "28ff5d06-eb8b-47e9-8b7f-82e4efced27b",
+    "openFiles": [
+      "6ddbda18-df5b-4afc-8e24-36ef9da9522b"
+    ],
+    "currentFileId": "6ddbda18-df5b-4afc-8e24-36ef9da9522b",
+    "resources": {
+      "apigusEast1demo3demo3get": {
+        "name": "apigusEast1demo3demo3get",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "demo3",
+          "apiId": "3hq05oq3wa",
+          "endpointType": "EDGE",
+          "rootResourceId": "zacuhj6id8",
+          "existingResources": {
+            "/demo3": "dctxsy",
+            "/": "zacuhj6id8"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/demo3",
+          "resourceName": "demo3",
+          "resourceId": "dctxsy",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "dev",
+          "stageDeploymentId": "axl45w"
+        },
+        "globallyEditable": false
+      },
+      "s3cfTemplates1oea0dbk84gyvUsWest2": {
+        "name": "s3cfTemplates1oea0dbk84gyvUsWest2",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "region": "us-east-1",
+            "name": "cf-templates-1oea0dbk84gyv-us-west-2"
+          }
+        },
+        "globallyEditable": false
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "version": "2.176.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "MyFirstProject",
+    "projectDescription": "My First Project",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1551180150153
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "MyFirstProject",
+      "url": "https://github.com/Kumudikatest/MyFirstProject"
+    }
+  }
+}
