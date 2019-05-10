@@ -1,88 +1,73 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "28ff5d06-eb8b-47e9-8b7f-82e4efced27b": {
-        "id": "28ff5d06-eb8b-47e9-8b7f-82e4efced27b",
+      "927ce80a-fb85-4e61-878c-23da3f723e03": {
+        "id": "927ce80a-fb85-4e61-878c-23da3f723e03",
         "parent": null,
         "name": "MyFirstProject",
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "6ddbda18-df5b-4afc-8e24-36ef9da9522b"
+          "d5082565-df17-4378-bea6-1055416d9ad7"
         ],
         "isRemovable": false,
         "filePath": "MyFirstProject"
       },
-      "6ddbda18-df5b-4afc-8e24-36ef9da9522b": {
-        "id": "6ddbda18-df5b-4afc-8e24-36ef9da9522b",
-        "parent": "28ff5d06-eb8b-47e9-8b7f-82e4efced27b",
+      "d5082565-df17-4378-bea6-1055416d9ad7": {
+        "id": "d5082565-df17-4378-bea6-1055416d9ad7",
+        "parent": "927ce80a-fb85-4e61-878c-23da3f723e03",
         "name": "lambda.js",
-        "type": "LAMBDA_FILE",
+        "type": "JS_LAMBDA",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
         "filePath": "MyFirstProject/lambda.js",
-        "code": "let AWS = require('aws-sdk');\nconst s3 = new AWS.S3();\n\nexports.handler = function (event, context, callback) {\n    s3.listObjects({\n        'Bucket': 'cf-templates-1oea0dbk84gyv-us-west-2',\n        'MaxKeys': 10,\n        'Prefix': ''\n    }).promise()\n        .then(data => {\n            console.log(data);           // successful response\n            /*\n            data = {\n             Contents: [\n                {\n                   ETag: \"\\\\\"70ee1738b6b21e2c8a43f3a5ab0eee71\\\\\"\",\n                   Key: \"example1.jpg\",\n                   LastModified: <Date Representation>,\n                   Owner: {\n                      DisplayName: \"myname\",\n                      ID: \"12345example25102679df27bb0ae12b3f85be6f290b936c4393484be31bebcc\"\n                   },\n                   Size: 11,\n                   StorageClass: \"STANDARD\"\n                },\n                {...}\n            */\n        })\n        .catch(err => {\n            console.log(err, err.stack); // an error occurred\n        });\n\n    callback(null, { \"message\": \"Successfully executed\" });\n}",
-        "triggers": [
-          {
-            "resourceName": "apigusEast1demo3demo3get",
-            "config": {}
-          }
-        ],
+        "code": "let AWS = require('aws-sdk');\nlet SL_AWS = require('slappforge-sdk-aws');\nconst sqs = new SL_AWS.SQS(AWS);\n\nexports.handler = function (event, context, callback) {\n    sqs.sendMessage({\n        MessageBody: 'test',\n        QueueUrl: `https://sqs.${process.env.AWS_REGION}.amazonaws.com/${process.env.SIGMA_AWS_ACC_ID}/sqs`,\n        DelaySeconds: '0',\n        MessageAttributes: {}\n    }, function (data) {\n        // your logic (logging etc) to handle successful message delivery, should be here\n    }, function (error) {\n        // your logic (logging etc) to handle failures, should be here\n        console.log(error);\n    });\n\n    callback(null, { \"message\": \"Successfully executed\" });\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
           "timeout": 60,
           "memory": 128,
           "layers": []
+        },
+        "triggers": [],
+        "testCases": {
+          "fdf8ee20-6beb-47e9-b7be-e99a52aa4d37": {
+            "id": "fdf8ee20-6beb-47e9-b7be-e99a52aa4d37",
+            "functionId": "d5082565-df17-4378-bea6-1055416d9ad7",
+            "name": "My First Test Case",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          }
         }
       }
     },
     "deletedFiles": [],
-    "rootNode": "28ff5d06-eb8b-47e9-8b7f-82e4efced27b",
+    "rootNode": "927ce80a-fb85-4e61-878c-23da3f723e03",
     "openFiles": [
-      "6ddbda18-df5b-4afc-8e24-36ef9da9522b"
+      "d5082565-df17-4378-bea6-1055416d9ad7"
     ],
-    "currentFileId": "6ddbda18-df5b-4afc-8e24-36ef9da9522b",
+    "currentFileId": "d5082565-df17-4378-bea6-1055416d9ad7",
     "resources": {
-      "apigusEast1demo3demo3get": {
-        "name": "apigusEast1demo3demo3get",
-        "type": "API_GATEWAY",
-        "config": {
-          "selectedRegion": "us-east-1",
-          "apiMode": 1,
-          "apiName": "demo3",
-          "apiId": "3hq05oq3wa",
-          "endpointType": "EDGE",
-          "rootResourceId": "zacuhj6id8",
-          "existingResources": {
-            "/demo3": "dctxsy",
-            "/": "zacuhj6id8"
-          },
-          "resourceMode": 1,
-          "resourcePath": "/demo3",
-          "resourceName": "demo3",
-          "resourceId": "dctxsy",
-          "restMethod": "GET",
-          "proxyIntegration": false,
-          "enableCORS": false,
-          "stageMode": 1,
-          "stageName": "dev",
-          "stageDeploymentId": "axl45w"
-        },
-        "globallyEditable": false
-      },
-      "s3cfTemplates1oea0dbk84gyvUsWest2": {
-        "name": "s3cfTemplates1oea0dbk84gyvUsWest2",
-        "type": "S3",
+      "sqssqs": {
+        "name": "sqssqs",
+        "type": "SQS",
         "config": {
           "mode": 1,
-          "bucket": {
-            "region": "us-east-1",
-            "name": "cf-templates-1oea0dbk84gyv-us-west-2"
-          }
-        },
-        "globallyEditable": false
+          "existing": true,
+          "name": "sqs",
+          "url": "https://sqs.us-east-1.amazonaws.com/263248768798/sqs",
+          "selectedRegion": "us-east-1",
+          "deliveryDelay": "0",
+          "deliveryDelayUnit": "seconds",
+          "queueType": "standardQueue",
+          "defaultVisibilityTimeout": "30",
+          "defaultVisibilityTimeoutUnit": "seconds",
+          "messageRetentionPeriod": "345600",
+          "messageRetentionPeriodUnit": "seconds",
+          "maximumMessageSize": 256,
+          "receiveMessageWaitTime": "0",
+          "queueARN": "arn:aws:sqs:us-east-1:263248768798:sqs"
+        }
       }
     },
     "customTemplate": {
@@ -103,8 +88,16 @@
       "dependencies": {
         "aws-sdk": {
           "name": "aws-sdk",
+          "language": "javascript",
           "version": "2.176.0",
           "dev": true,
+          "notRemovable": false
+        },
+        "slappforge-sdk-aws": {
+          "name": "slappforge-sdk-aws",
+          "language": "javascript",
+          "version": "0.0.5",
+          "dev": false,
           "notRemovable": false
         }
       }
@@ -117,7 +110,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1551180150153
+    "lastSave": 1557469781715
   },
   "VCS_STATE": {
     "provider": "GitHub",
