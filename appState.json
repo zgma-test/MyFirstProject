@@ -1,27 +1,27 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "030ddb91-ff5d-41b1-b9a3-cc810c73e328": {
-        "id": "030ddb91-ff5d-41b1-b9a3-cc810c73e328",
+      "eb452512-e11a-41a8-a751-556b78b7be8b": {
+        "id": "eb452512-e11a-41a8-a751-556b78b7be8b",
         "parent": null,
         "name": "MyFirstProject",
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "221045dc-750d-4c76-8454-cc9e98e62b76"
+          "66948a3f-2d91-48fe-804a-25051918b9ff"
         ],
         "isRemovable": false,
         "filePath": "MyFirstProject"
       },
-      "221045dc-750d-4c76-8454-cc9e98e62b76": {
-        "id": "221045dc-750d-4c76-8454-cc9e98e62b76",
-        "parent": "030ddb91-ff5d-41b1-b9a3-cc810c73e328",
-        "name": "new3.js",
+      "66948a3f-2d91-48fe-804a-25051918b9ff": {
+        "id": "66948a3f-2d91-48fe-804a-25051918b9ff",
+        "parent": "eb452512-e11a-41a8-a751-556b78b7be8b",
+        "name": "newww.js",
         "type": "LAMBDA_FILE",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "MyFirstProject/new3.js",
+        "filePath": "MyFirstProject/newww.js",
         "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
         "triggers": [],
         "config": {
@@ -34,13 +34,13 @@
       }
     },
     "deletedFiles": [
-      "MyFirstProject/new2.js"
+      "MyFirstProject/lambda.js"
     ],
-    "rootNode": "030ddb91-ff5d-41b1-b9a3-cc810c73e328",
+    "rootNode": "eb452512-e11a-41a8-a751-556b78b7be8b",
     "openFiles": [
-      "221045dc-750d-4c76-8454-cc9e98e62b76"
+      "66948a3f-2d91-48fe-804a-25051918b9ff"
     ],
-    "currentFileId": "221045dc-750d-4c76-8454-cc9e98e62b76",
+    "currentFileId": "66948a3f-2d91-48fe-804a-25051918b9ff",
     "resources": {},
     "customTemplate": {
       "dialect": null,
@@ -67,7 +67,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1560255184444
+    "lastSave": 1560255276135
   },
   "VCS_STATE": {
     "provider": "GitHub",
