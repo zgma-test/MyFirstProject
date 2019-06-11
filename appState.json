@@ -8,30 +8,10 @@
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "bd706705-4c77-4f2e-8eb6-4bc3a6a9e802",
           "221045dc-750d-4c76-8454-cc9e98e62b76"
         ],
         "isRemovable": false,
         "filePath": "MyFirstProject"
-      },
-      "bd706705-4c77-4f2e-8eb6-4bc3a6a9e802": {
-        "id": "bd706705-4c77-4f2e-8eb6-4bc3a6a9e802",
-        "parent": "030ddb91-ff5d-41b1-b9a3-cc810c73e328",
-        "name": "new2.js",
-        "type": "LAMBDA_FILE",
-        "isDirectory": false,
-        "children": [],
-        "isRemovable": true,
-        "filePath": "MyFirstProject/new2.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
-        "triggers": [],
-        "config": {
-          "runtime": "nodejs8.10",
-          "handler": "handler",
-          "timeout": 60,
-          "memory": 128,
-          "layers": []
-        }
       },
       "221045dc-750d-4c76-8454-cc9e98e62b76": {
         "id": "221045dc-750d-4c76-8454-cc9e98e62b76",
@@ -53,10 +33,11 @@
         }
       }
     },
-    "deletedFiles": [],
+    "deletedFiles": [
+      "MyFirstProject/new2.js"
+    ],
     "rootNode": "030ddb91-ff5d-41b1-b9a3-cc810c73e328",
     "openFiles": [
-      "bd706705-4c77-4f2e-8eb6-4bc3a6a9e802",
       "221045dc-750d-4c76-8454-cc9e98e62b76"
     ],
     "currentFileId": "221045dc-750d-4c76-8454-cc9e98e62b76",
@@ -86,7 +67,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1560255166584
+    "lastSave": 1560255184444
   },
   "VCS_STATE": {
     "provider": "GitHub",
