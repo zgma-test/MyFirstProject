@@ -1,75 +1,47 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "927ce80a-fb85-4e61-878c-23da3f723e03": {
-        "id": "927ce80a-fb85-4e61-878c-23da3f723e03",
+      "030ddb91-ff5d-41b1-b9a3-cc810c73e328": {
+        "id": "030ddb91-ff5d-41b1-b9a3-cc810c73e328",
         "parent": null,
         "name": "MyFirstProject",
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "d5082565-df17-4378-bea6-1055416d9ad7"
+          "ad719484-0f7c-4229-8c21-c2ceab9e5715"
         ],
         "isRemovable": false,
         "filePath": "MyFirstProject"
       },
-      "d5082565-df17-4378-bea6-1055416d9ad7": {
-        "id": "d5082565-df17-4378-bea6-1055416d9ad7",
-        "parent": "927ce80a-fb85-4e61-878c-23da3f723e03",
+      "ad719484-0f7c-4229-8c21-c2ceab9e5715": {
+        "id": "ad719484-0f7c-4229-8c21-c2ceab9e5715",
+        "parent": "030ddb91-ff5d-41b1-b9a3-cc810c73e328",
         "name": "lambda.js",
-        "type": "JS_LAMBDA",
+        "type": "LAMBDA_FILE",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
         "filePath": "MyFirstProject/lambda.js",
-        "code": "let AWS = require('aws-sdk');\nlet SL_AWS = require('slappforge-sdk-aws');\nconst sqs = new SL_AWS.SQS(AWS);\n\nexports.handler = function (event, context, callback) {\n    sqs.sendMessage({\n        MessageBody: 'test',\n        QueueUrl: `https://sqs.${process.env.AWS_REGION}.amazonaws.com/${process.env.SIGMA_AWS_ACC_ID}/sqs`,\n        DelaySeconds: '0',\n        MessageAttributes: {}\n    }, function (data) {\n        // your logic (logging etc) to handle successful message delivery, should be here\n    }, function (error) {\n        // your logic (logging etc) to handle failures, should be here\n        console.log(error);\n    });\n\n    callback(null, { \"message\": \"Successfully executed\" });\n}",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [],
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
           "timeout": 60,
           "memory": 128,
           "layers": []
-        },
-        "triggers": [],
-        "testCases": {
-          "fdf8ee20-6beb-47e9-b7be-e99a52aa4d37": {
-            "id": "fdf8ee20-6beb-47e9-b7be-e99a52aa4d37",
-            "functionId": "d5082565-df17-4378-bea6-1055416d9ad7",
-            "name": "My First Test Case",
-            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
-          }
         }
       }
     },
-    "deletedFiles": [],
-    "rootNode": "927ce80a-fb85-4e61-878c-23da3f723e03",
-    "openFiles": [
-      "d5082565-df17-4378-bea6-1055416d9ad7"
+    "deletedFiles": [
+      "MyFirstProject/new.js"
     ],
-    "currentFileId": "d5082565-df17-4378-bea6-1055416d9ad7",
-    "resources": {
-      "sqssqs": {
-        "name": "sqssqs",
-        "type": "SQS",
-        "config": {
-          "mode": 1,
-          "existing": true,
-          "name": "sqs",
-          "url": "https://sqs.us-east-1.amazonaws.com/263248768798/sqs",
-          "selectedRegion": "us-east-1",
-          "deliveryDelay": "0",
-          "deliveryDelayUnit": "seconds",
-          "queueType": "standardQueue",
-          "defaultVisibilityTimeout": "30",
-          "defaultVisibilityTimeoutUnit": "seconds",
-          "messageRetentionPeriod": "345600",
-          "messageRetentionPeriodUnit": "seconds",
-          "maximumMessageSize": 256,
-          "receiveMessageWaitTime": "0",
-          "queueARN": "arn:aws:sqs:us-east-1:263248768798:sqs"
-        }
-      }
-    },
+    "rootNode": "030ddb91-ff5d-41b1-b9a3-cc810c73e328",
+    "openFiles": [
+      "ad719484-0f7c-4229-8c21-c2ceab9e5715"
+    ],
+    "currentFileId": "ad719484-0f7c-4229-8c21-c2ceab9e5715",
+    "resources": {},
     "customTemplate": {
       "dialect": null,
       "definitions": {}
@@ -85,22 +57,7 @@
       }
     ],
     "packageJSON": {
-      "dependencies": {
-        "aws-sdk": {
-          "name": "aws-sdk",
-          "language": "javascript",
-          "version": "2.176.0",
-          "dev": true,
-          "notRemovable": false
-        },
-        "slappforge-sdk-aws": {
-          "name": "slappforge-sdk-aws",
-          "language": "javascript",
-          "version": "0.0.5",
-          "dev": false,
-          "notRemovable": false
-        }
-      }
+      "dependencies": {}
     }
   },
   "PROJECT_META": {
@@ -110,7 +67,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1557469781715
+    "lastSave": 1560254273855
   },
   "VCS_STATE": {
     "provider": "GitHub",
