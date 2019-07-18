@@ -1,28 +1,28 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "d4fb7d62-0df5-4ea8-a6e9-82d1fb937d55": {
-        "id": "d4fb7d62-0df5-4ea8-a6e9-82d1fb937d55",
+      "5382478f-a138-4f56-957d-084f1d701398": {
+        "id": "5382478f-a138-4f56-957d-084f1d701398",
         "parent": null,
         "name": "MyFirstProject",
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "8cbcf65a-bb6f-40a1-bcfc-82ea67891178"
+          "d24df337-fc83-4f0c-b203-9ef8363fdc98"
         ],
         "isRemovable": false,
         "filePath": "MyFirstProject"
       },
-      "8cbcf65a-bb6f-40a1-bcfc-82ea67891178": {
-        "id": "8cbcf65a-bb6f-40a1-bcfc-82ea67891178",
-        "parent": "d4fb7d62-0df5-4ea8-a6e9-82d1fb937d55",
+      "d24df337-fc83-4f0c-b203-9ef8363fdc98": {
+        "id": "d24df337-fc83-4f0c-b203-9ef8363fdc98",
+        "parent": "5382478f-a138-4f56-957d-084f1d701398",
         "name": "lambda.js",
         "type": "JS_LAMBDA",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
         "filePath": "MyFirstProject/lambda.js",
-        "code": "exports.handler = function (event, context, callback) {\n\n\n    callback(null, { \"message\": \"Successfully executed\" });\n}",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
         "config": {
           "runtime": "nodejs8.10",
           "handler": "handler",
@@ -32,9 +32,9 @@
         },
         "triggers": [],
         "testCases": {
-          "f300537e-0f34-4df2-9484-7fcf7039e6cc": {
-            "id": "f300537e-0f34-4df2-9484-7fcf7039e6cc",
-            "functionId": "8cbcf65a-bb6f-40a1-bcfc-82ea67891178",
+          "5e95a4f0-4da6-433b-acbe-e5963d06de19": {
+            "id": "5e95a4f0-4da6-433b-acbe-e5963d06de19",
+            "functionId": "d24df337-fc83-4f0c-b203-9ef8363fdc98",
             "name": "My First Test Case",
             "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
           }
@@ -42,11 +42,11 @@
       }
     },
     "deletedFiles": [],
-    "rootNode": "d4fb7d62-0df5-4ea8-a6e9-82d1fb937d55",
+    "rootNode": "5382478f-a138-4f56-957d-084f1d701398",
     "openFiles": [
-      "8cbcf65a-bb6f-40a1-bcfc-82ea67891178"
+      "d24df337-fc83-4f0c-b203-9ef8363fdc98"
     ],
-    "currentFileId": "8cbcf65a-bb6f-40a1-bcfc-82ea67891178",
+    "currentFileId": "d24df337-fc83-4f0c-b203-9ef8363fdc98",
     "resources": {},
     "customTemplate": {
       "dialect": null,
@@ -63,15 +63,7 @@
       }
     ],
     "packageJSON": {
-      "dependencies": {
-        "aws-sdk": {
-          "name": "aws-sdk",
-          "language": "javascript",
-          "version": "2.176.0",
-          "dev": true,
-          "notRemovable": false
-        }
-      }
+      "dependencies": {}
     }
   },
   "PROJECT_META": {
@@ -81,7 +73,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1562045849896
+    "lastSave": 1563431484583
   },
   "VCS_STATE": {
     "provider": "GitHub",
