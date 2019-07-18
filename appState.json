@@ -8,7 +8,9 @@
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "d24df337-fc83-4f0c-b203-9ef8363fdc98"
+          "d24df337-fc83-4f0c-b203-9ef8363fdc98",
+          "1d021a5b-519f-443f-9b68-615b65f95831",
+          "da4ae717-0633-49f1-a231-94ec609c23c0"
         ],
         "isRemovable": false,
         "filePath": "MyFirstProject"
@@ -39,14 +41,45 @@
             "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
           }
         }
+      },
+      "1d021a5b-519f-443f-9b68-615b65f95831": {
+        "id": "1d021a5b-519f-443f-9b68-615b65f95831",
+        "parent": "5382478f-a138-4f56-957d-084f1d701398",
+        "name": "gg.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "MyFirstProject/gg.py",
+        "code": "def handler(event, context):\n    \n    return {\"message\": \"Successfully executed\"}\n",
+        "config": {
+          "runtime": "python2.7",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "da4ae717-0633-49f1-a231-94ec609c23c0": {
+        "id": "da4ae717-0633-49f1-a231-94ec609c23c0",
+        "parent": "5382478f-a138-4f56-957d-084f1d701398",
+        "name": "__init__.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "MyFirstProject/__init__.py",
+        "code": ""
       }
     },
     "deletedFiles": [],
     "rootNode": "5382478f-a138-4f56-957d-084f1d701398",
     "openFiles": [
-      "d24df337-fc83-4f0c-b203-9ef8363fdc98"
+      "d24df337-fc83-4f0c-b203-9ef8363fdc98",
+      "1d021a5b-519f-443f-9b68-615b65f95831"
     ],
-    "currentFileId": "d24df337-fc83-4f0c-b203-9ef8363fdc98",
+    "currentFileId": "1d021a5b-519f-443f-9b68-615b65f95831",
     "resources": {},
     "customTemplate": {
       "dialect": null,
@@ -60,6 +93,14 @@
         "shouldPersist": false,
         "displayOnly": false,
         "editable": false
+      },
+      {
+        "lambdaId": "1d021a5b-519f-443f-9b68-615b65f95831",
+        "varKey": "PYTHONPATH",
+        "varValue": "/var/runtime:/var/task/MyFirstProject",
+        "shouldPersist": true,
+        "displayOnly": false,
+        "editable": true
       }
     ],
     "packageJSON": {
@@ -73,7 +114,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1563431525427
+    "lastSave": 1563431581316
   },
   "VCS_STATE": {
     "provider": "GitHub",
