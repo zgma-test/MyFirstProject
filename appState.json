@@ -1,23 +1,21 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "5382478f-a138-4f56-957d-084f1d701398": {
-        "id": "5382478f-a138-4f56-957d-084f1d701398",
+      "36f6c2b6-52e7-4def-9fd4-7990bec1ba3a": {
+        "id": "36f6c2b6-52e7-4def-9fd4-7990bec1ba3a",
         "parent": null,
         "name": "MyFirstProject",
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "d24df337-fc83-4f0c-b203-9ef8363fdc98",
-          "1d021a5b-519f-443f-9b68-615b65f95831",
-          "da4ae717-0633-49f1-a231-94ec609c23c0"
+          "716759ee-dbd6-4635-a54d-f6caf287c136"
         ],
         "isRemovable": false,
         "filePath": "MyFirstProject"
       },
-      "d24df337-fc83-4f0c-b203-9ef8363fdc98": {
-        "id": "d24df337-fc83-4f0c-b203-9ef8363fdc98",
-        "parent": "5382478f-a138-4f56-957d-084f1d701398",
+      "716759ee-dbd6-4635-a54d-f6caf287c136": {
+        "id": "716759ee-dbd6-4635-a54d-f6caf287c136",
+        "parent": "36f6c2b6-52e7-4def-9fd4-7990bec1ba3a",
         "name": "lambda.js",
         "type": "JS_LAMBDA",
         "isDirectory": false,
@@ -34,52 +32,21 @@
         },
         "triggers": [],
         "testCases": {
-          "5e95a4f0-4da6-433b-acbe-e5963d06de19": {
-            "id": "5e95a4f0-4da6-433b-acbe-e5963d06de19",
-            "functionId": "d24df337-fc83-4f0c-b203-9ef8363fdc98",
+          "945bf05a-4129-4425-b796-c77aa1c6bc5e": {
+            "id": "945bf05a-4129-4425-b796-c77aa1c6bc5e",
+            "functionId": "716759ee-dbd6-4635-a54d-f6caf287c136",
             "name": "My First Test Case",
             "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
           }
         }
-      },
-      "1d021a5b-519f-443f-9b68-615b65f95831": {
-        "id": "1d021a5b-519f-443f-9b68-615b65f95831",
-        "parent": "5382478f-a138-4f56-957d-084f1d701398",
-        "name": "gg.py",
-        "type": "PYTHON_LAMBDA",
-        "isDirectory": false,
-        "children": [],
-        "isRemovable": true,
-        "filePath": "MyFirstProject/gg.py",
-        "code": "def handler(event, context):\n    \n    return {\"message\": \"Successfully executed\"}\n",
-        "config": {
-          "runtime": "python2.7",
-          "handler": "handler",
-          "timeout": 60,
-          "memory": 128,
-          "layers": []
-        },
-        "triggers": []
-      },
-      "da4ae717-0633-49f1-a231-94ec609c23c0": {
-        "id": "da4ae717-0633-49f1-a231-94ec609c23c0",
-        "parent": "5382478f-a138-4f56-957d-084f1d701398",
-        "name": "__init__.py",
-        "type": "PYTHON_FILE",
-        "isDirectory": false,
-        "children": [],
-        "isRemovable": true,
-        "filePath": "MyFirstProject/__init__.py",
-        "code": ""
       }
     },
     "deletedFiles": [],
-    "rootNode": "5382478f-a138-4f56-957d-084f1d701398",
+    "rootNode": "36f6c2b6-52e7-4def-9fd4-7990bec1ba3a",
     "openFiles": [
-      "d24df337-fc83-4f0c-b203-9ef8363fdc98",
-      "1d021a5b-519f-443f-9b68-615b65f95831"
+      "716759ee-dbd6-4635-a54d-f6caf287c136"
     ],
-    "currentFileId": "1d021a5b-519f-443f-9b68-615b65f95831",
+    "currentFileId": "716759ee-dbd6-4635-a54d-f6caf287c136",
     "resources": {},
     "customTemplate": {
       "dialect": null,
@@ -93,14 +60,6 @@
         "shouldPersist": false,
         "displayOnly": false,
         "editable": false
-      },
-      {
-        "lambdaId": "1d021a5b-519f-443f-9b68-615b65f95831",
-        "varKey": "PYTHONPATH",
-        "varValue": "/var/runtime:/var/task/MyFirstProject",
-        "shouldPersist": true,
-        "displayOnly": false,
-        "editable": true
       }
     ],
     "packageJSON": {
@@ -114,13 +73,14 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1563431581316
+    "lastSave": 1564120159128
   },
   "VCS_STATE": {
     "provider": "GitHub",
     "repo": {
       "name": "MyFirstProject",
-      "url": "https://github.com/Kumudikatest/MyFirstProject"
+      "url": "https://github.com/Kumudikatest/MyFirstProject",
+      "branches": []
     }
   }
 }
