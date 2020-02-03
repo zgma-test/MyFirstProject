@@ -1,52 +1,103 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "caba48e8-3f6b-4024-a314-29bb9ed0895d": {
-        "id": "caba48e8-3f6b-4024-a314-29bb9ed0895d",
+      "4d98f196-65da-4ca2-b657-d81693a818da": {
+        "id": "4d98f196-65da-4ca2-b657-d81693a818da",
         "parent": null,
         "name": "MyFirstProject",
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "b5675c3d-475c-473f-8652-4b99a47df858"
+          "4144e28c-d9f2-49e1-ac2b-f111b06f7b17",
+          "4580f46a-9241-4151-9d73-d15c6f03d3db"
         ],
         "isRemovable": false,
         "filePath": "MyFirstProject"
       },
-      "b5675c3d-475c-473f-8652-4b99a47df858": {
-        "id": "b5675c3d-475c-473f-8652-4b99a47df858",
-        "parent": "caba48e8-3f6b-4024-a314-29bb9ed0895d",
+      "4144e28c-d9f2-49e1-ac2b-f111b06f7b17": {
+        "id": "4144e28c-d9f2-49e1-ac2b-f111b06f7b17",
+        "parent": "4d98f196-65da-4ca2-b657-d81693a818da",
         "name": "lambda.js",
         "type": "JS_LAMBDA",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
         "filePath": "MyFirstProject/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
         "config": {
-          "runtime": "nodejs8.10",
+          "runtime": "nodejs12.x",
           "handler": "handler",
           "timeout": 60,
           "memory": 128,
           "layers": []
         },
-        "triggers": [],
+        "triggers": [
+          {
+            "resourceName": "apigusEast1oshadeeapiuomany",
+            "config": {}
+          }
+        ],
         "testCases": {
-          "ac2db3cd-5334-4cdf-a36f-279de6cb4e12": {
-            "id": "ac2db3cd-5334-4cdf-a36f-279de6cb4e12",
-            "functionId": "b5675c3d-475c-473f-8652-4b99a47df858",
+          "5a7dea4f-ca5b-4112-8000-96919426512b": {
+            "id": "5a7dea4f-ca5b-4112-8000-96919426512b",
+            "functionId": "4144e28c-d9f2-49e1-ac2b-f111b06f7b17",
             "name": "My First Test Case",
             "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
           }
         }
+      },
+      "4580f46a-9241-4151-9d73-d15c6f03d3db": {
+        "id": "4580f46a-9241-4151-9d73-d15c6f03d3db",
+        "parent": "4d98f196-65da-4ca2-b657-d81693a818da",
+        "name": "f.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "MyFirstProject/f.js",
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
       }
     },
-    "rootNode": "caba48e8-3f6b-4024-a314-29bb9ed0895d",
+    "rootNode": "4d98f196-65da-4ca2-b657-d81693a818da",
     "openFiles": [
-      "b5675c3d-475c-473f-8652-4b99a47df858"
+      "4144e28c-d9f2-49e1-ac2b-f111b06f7b17",
+      "4580f46a-9241-4151-9d73-d15c6f03d3db"
     ],
-    "currentFileId": "b5675c3d-475c-473f-8652-4b99a47df858",
-    "resources": {},
+    "currentFileId": "4144e28c-d9f2-49e1-ac2b-f111b06f7b17",
+    "resources": {
+      "apigusEast1oshadeeapiuomany": {
+        "name": "apigusEast1oshadeeapiuomany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "oshadeeapiuom",
+          "apiId": "dcwosrt3mh",
+          "endpointType": "REGIONAL",
+          "rootResourceId": "ia1xzf4ck0",
+          "existingResources": {
+            "/": "ia1xzf4ck0",
+            "/oshii": "q9j5a1"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/",
+          "resourceName": "",
+          "resourceId": "ia1xzf4ck0",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "l",
+          "mode": 1
+        }
+      }
+    },
     "customTemplate": {
       "dialect": null,
       "definitions": null
@@ -72,7 +123,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1572004261429
+    "lastSave": 1580720760581
   },
   "VCS_STATE": {
     "provider": "GitHub",
