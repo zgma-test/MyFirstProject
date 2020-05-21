@@ -1,15 +1,5 @@
-let AWS = require('aws-sdk');
-const ddb = new AWS.DynamoDB.DocumentClient();
-
 exports.handler = async (event) => {
-    try {
-        let data = await ddb.query({
-            TableName: "jnk"
-        }).promise();
-
-    } catch (err) {
-        // error handling goes here
-    };
+    debugger;
 
     return { "message": "Successfully executed" };
 };

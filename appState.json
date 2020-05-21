@@ -1,8 +1,8 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "902a5fce-2dd8-4710-99ad-705dce817e0d": {
-        "id": "902a5fce-2dd8-4710-99ad-705dce817e0d",
+      "47c8fbe2-d623-4955-be5c-a3a4f6aa4460": {
+        "id": "47c8fbe2-d623-4955-be5c-a3a4f6aa4460",
         "parent": null,
         "name": "MyFirstProject.js",
         "type": "JS_LAMBDA",
@@ -22,16 +22,11 @@
           "layers": [],
           "name": "MyFirstProject"
         },
-        "triggers": [
-          {
-            "resourceName": "apigusEast1oshadeeapiuomany",
-            "config": {}
-          }
-        ],
+        "triggers": [],
         "testCases": {
-          "849e13b6-f892-4823-a4dc-985f1636b1f3": {
-            "id": "849e13b6-f892-4823-a4dc-985f1636b1f3",
-            "functionId": "902a5fce-2dd8-4710-99ad-705dce817e0d",
+          "ed79677a-49fa-4357-9aed-5133f30b37fd": {
+            "id": "ed79677a-49fa-4357-9aed-5133f30b37fd",
+            "functionId": "47c8fbe2-d623-4955-be5c-a3a4f6aa4460",
             "name": "My First Test Case",
             "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
           }
@@ -39,55 +34,10 @@
       }
     },
     "openFiles": [
-      "902a5fce-2dd8-4710-99ad-705dce817e0d"
+      "47c8fbe2-d623-4955-be5c-a3a4f6aa4460"
     ],
-    "currentFileId": "902a5fce-2dd8-4710-99ad-705dce817e0d",
-    "resources": {
-      "apigusEast1oshadeeapiuomany": {
-        "name": "apigusEast1oshadeeapiuomany",
-        "type": "API_GATEWAY",
-        "config": {
-          "selectedRegion": "us-east-1",
-          "apiMode": 1,
-          "apiName": "oshadeeapiuom",
-          "apiId": "dcwosrt3mh",
-          "endpointType": "REGIONAL",
-          "rootResourceId": "ia1xzf4ck0",
-          "existingResources": {
-            "/": "ia1xzf4ck0",
-            "/oshii": "q9j5a1"
-          },
-          "resourceMode": 1,
-          "resourcePath": "/",
-          "resourceName": "",
-          "resourceId": "ia1xzf4ck0",
-          "restMethod": "ANY",
-          "proxyIntegration": false,
-          "enableCORS": false,
-          "stageMode": 0,
-          "stageName": "nbn",
-          "mode": 1
-        }
-      },
-      "ddbjnk": {
-        "name": "ddbjnk",
-        "type": "DynamoDB",
-        "config": {
-          "mode": 0,
-          "table": {
-            "arn": "",
-            "name": "jnk",
-            "partitionKey": "id",
-            "partitionKeyType": "S",
-            "hasSortKey": false,
-            "sortKey": "",
-            "sortKeyType": "S",
-            "payPerRequest": true,
-            "mode": 0
-          }
-        }
-      }
-    },
+    "currentFileId": "47c8fbe2-d623-4955-be5c-a3a4f6aa4460",
+    "resources": {},
     "customTemplate": {
       "overrideDefault": false,
       "dialect": null,
@@ -104,15 +54,7 @@
       }
     ],
     "packageJSON": {
-      "dependencies": {
-        "aws-sdk": {
-          "name": "aws-sdk",
-          "language": "nodejs",
-          "version": "2.644.0",
-          "dev": true,
-          "notRemovable": false
-        }
-      }
+      "dependencies": {}
     }
   },
   "PROJECT_META": {
@@ -123,7 +65,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1586346287940
+    "lastSave": 1590059341702
   },
   "VCS_STATE": {
     "provider": "GitHub",
