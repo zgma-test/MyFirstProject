@@ -1,8 +1,8 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "47c8fbe2-d623-4955-be5c-a3a4f6aa4460": {
-        "id": "47c8fbe2-d623-4955-be5c-a3a4f6aa4460",
+      "90f8219c-7266-477c-94fe-3e7809f11713": {
+        "id": "90f8219c-7266-477c-94fe-3e7809f11713",
         "parent": null,
         "name": "MyFirstProject.js",
         "type": "JS_LAMBDA",
@@ -11,7 +11,7 @@
         "isRemovable": true,
         "filePath": "MyFirstProject.js",
         "cursor": {
-          "lineNumber": 1,
+          "lineNumber": 3,
           "column": 1
         },
         "config": {
@@ -24,9 +24,9 @@
         },
         "triggers": [],
         "testCases": {
-          "ed79677a-49fa-4357-9aed-5133f30b37fd": {
-            "id": "ed79677a-49fa-4357-9aed-5133f30b37fd",
-            "functionId": "47c8fbe2-d623-4955-be5c-a3a4f6aa4460",
+          "384a6358-749e-43fa-95c4-7b8949e9bda5": {
+            "id": "384a6358-749e-43fa-95c4-7b8949e9bda5",
+            "functionId": "90f8219c-7266-477c-94fe-3e7809f11713",
             "name": "My First Test Case",
             "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
           }
@@ -34,11 +34,12 @@
       }
     },
     "openFiles": [
-      "47c8fbe2-d623-4955-be5c-a3a4f6aa4460"
+      "90f8219c-7266-477c-94fe-3e7809f11713"
     ],
-    "currentFileId": "47c8fbe2-d623-4955-be5c-a3a4f6aa4460",
+    "currentFileId": "90f8219c-7266-477c-94fe-3e7809f11713",
     "resources": {},
     "customTemplate": {
+      "syntax": "JSON",
       "overrideDefault": false,
       "dialect": null,
       "definitions": null
@@ -58,6 +59,7 @@
     }
   },
   "PROJECT_META": {
+    "sigmaVersion": "1.4.1.1",
     "projectName": "MyFirstProject",
     "projectDescription": "My First Project",
     "projectVersion": "1.0.0",
@@ -65,7 +67,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1590059785174
+    "lastSave": 1594876259712
   },
   "VCS_STATE": {
     "provider": "GitHub",
