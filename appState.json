@@ -1,8 +1,8 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "90f8219c-7266-477c-94fe-3e7809f11713": {
-        "id": "90f8219c-7266-477c-94fe-3e7809f11713",
+      "9f73b07a-4af8-4d7f-949d-cfc108c9373f": {
+        "id": "9f73b07a-4af8-4d7f-949d-cfc108c9373f",
         "parent": null,
         "name": "MyFirstProject.js",
         "type": "JS_LAMBDA",
@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "MyFirstProject.js",
         "cursor": {
-          "lineNumber": 3,
-          "column": 1
+          "lineNumber": 2,
+          "column": 22
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -24,20 +24,213 @@
         },
         "triggers": [],
         "testCases": {
-          "384a6358-749e-43fa-95c4-7b8949e9bda5": {
-            "id": "384a6358-749e-43fa-95c4-7b8949e9bda5",
-            "functionId": "90f8219c-7266-477c-94fe-3e7809f11713",
+          "69719cbe-f567-4af7-9947-91d46c29aa37": {
+            "id": "69719cbe-f567-4af7-9947-91d46c29aa37",
+            "functionId": "9f73b07a-4af8-4d7f-949d-cfc108c9373f",
             "name": "My First Test Case",
             "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
           }
         }
+      },
+      "7397f204-e28e-4223-8fd6-41439f16dce5": {
+        "id": "7397f204-e28e-4223-8fd6-41439f16dce5",
+        "parent": null,
+        "name": "k.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "k.js",
+        "cursor": {
+          "lineNumber": 2,
+          "column": 5
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "k"
+        },
+        "triggers": []
+      },
+      "cb750056-1ede-4fbb-bf68-eb79345dacce": {
+        "id": "cb750056-1ede-4fbb-bf68-eb79345dacce",
+        "parent": null,
+        "name": "fffff.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "fffff.js",
+        "cursor": {
+          "lineNumber": 2,
+          "column": 5
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "fffff"
+        },
+        "triggers": []
+      },
+      "cedeb1ab-dc7e-4cc4-a57b-8145b832f057": {
+        "id": "cedeb1ab-dc7e-4cc4-a57b-8145b832f057",
+        "parent": null,
+        "name": "1.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "1.js",
+        "cursor": {
+          "lineNumber": 1,
+          "column": 21
+        }
+      },
+      "da06f739-f1fa-44a6-86b0-3c20952f981b": {
+        "id": "da06f739-f1fa-44a6-86b0-3c20952f981b",
+        "parent": null,
+        "name": "fdsfs.html",
+        "type": "HTML_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "fdsfs.html"
+      },
+      "ac3ecf96-07f1-465a-94d3-b827b9478ab9": {
+        "id": "ac3ecf96-07f1-465a-94d3-b827b9478ab9",
+        "parent": null,
+        "name": "2.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "2.js"
+      },
+      "42e23f37-0400-426e-81aa-4e8077ef805d": {
+        "id": "42e23f37-0400-426e-81aa-4e8077ef805d",
+        "parent": null,
+        "name": "3.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "3.js"
+      },
+      "bbe97717-47b5-4152-ab89-33c6e4a124c0": {
+        "id": "bbe97717-47b5-4152-ab89-33c6e4a124c0",
+        "parent": null,
+        "name": "sub",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "9200a25f-7764-4a16-8740-a1887a84b7e4",
+          "45ed667f-5f33-4593-a42b-cdaf84d62857",
+          "a675a902-f8e1-4f4b-9430-464be03738d4",
+          "4a784e3d-0a51-4468-8932-a2d7a71a16c7",
+          "2b5aeccd-27da-425e-bce7-8402e61779ba"
+        ],
+        "isRemovable": true,
+        "filePath": "sub"
+      },
+      "9200a25f-7764-4a16-8740-a1887a84b7e4": {
+        "id": "9200a25f-7764-4a16-8740-a1887a84b7e4",
+        "parent": "bbe97717-47b5-4152-ab89-33c6e4a124c0",
+        "name": "dew.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "sub/dew.js",
+        "cursor": {
+          "lineNumber": 2,
+          "column": 30
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "dew"
+        },
+        "triggers": [
+          {
+            "resourceName": "alexaSK15970ba19cb64f6f9b22e6d5710707f0",
+            "config": {}
+          }
+        ]
+      },
+      "45ed667f-5f33-4593-a42b-cdaf84d62857": {
+        "id": "45ed667f-5f33-4593-a42b-cdaf84d62857",
+        "parent": "bbe97717-47b5-4152-ab89-33c6e4a124c0",
+        "name": "dewf.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "sub/dewf.js",
+        "cursor": {
+          "lineNumber": 1,
+          "column": 24
+        }
+      },
+      "a675a902-f8e1-4f4b-9430-464be03738d4": {
+        "id": "a675a902-f8e1-4f4b-9430-464be03738d4",
+        "parent": "bbe97717-47b5-4152-ab89-33c6e4a124c0",
+        "name": "h.html",
+        "type": "HTML_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "sub/h.html"
+      },
+      "4a784e3d-0a51-4468-8932-a2d7a71a16c7": {
+        "id": "4a784e3d-0a51-4468-8932-a2d7a71a16c7",
+        "parent": "bbe97717-47b5-4152-ab89-33c6e4a124c0",
+        "name": "p.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "sub/p.py",
+        "cursor": {
+          "lineNumber": 2,
+          "column": 1
+        }
+      },
+      "2b5aeccd-27da-425e-bce7-8402e61779ba": {
+        "id": "2b5aeccd-27da-425e-bce7-8402e61779ba",
+        "parent": "bbe97717-47b5-4152-ab89-33c6e4a124c0",
+        "name": "__init__.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "sub/__init__.py"
       }
     },
     "openFiles": [
-      "90f8219c-7266-477c-94fe-3e7809f11713"
+      "9200a25f-7764-4a16-8740-a1887a84b7e4"
     ],
-    "currentFileId": "90f8219c-7266-477c-94fe-3e7809f11713",
-    "resources": {},
+    "currentFileId": "9200a25f-7764-4a16-8740-a1887a84b7e4",
+    "resources": {
+      "alexaSK15970ba19cb64f6f9b22e6d5710707f0": {
+        "name": "alexaSK15970ba19cb64f6f9b22e6d5710707f0",
+        "type": "ALEXA",
+        "config": {
+          "type": 1,
+          "verifiedID": true,
+          "skillID": "amzn1.ask.skill.15970ba1-9cb6-4f6f-9b22-e6d5710707f0",
+          "applicationID": ""
+        }
+      }
+    },
     "customTemplate": {
       "syntax": "JSON",
       "overrideDefault": false,
@@ -59,7 +252,7 @@
     }
   },
   "PROJECT_META": {
-    "sigmaVersion": "1.4.1.1",
+    "sigmaVersion": "1.4.1.5",
     "projectName": "MyFirstProject",
     "projectDescription": "My First Project",
     "projectVersion": "1.0.0",
@@ -67,7 +260,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1594876259712
+    "lastSave": 1601984096315
   },
   "VCS_STATE": {
     "provider": "GitHub",
