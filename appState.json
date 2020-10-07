@@ -1,8 +1,8 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "39b4522a-4396-4b53-a99b-f38e8baebd7d": {
-        "id": "39b4522a-4396-4b53-a99b-f38e8baebd7d",
+      "e97d3399-3f32-4af6-863d-b80a7fba791c": {
+        "id": "e97d3399-3f32-4af6-863d-b80a7fba791c",
         "parent": null,
         "name": "MyFirstProject.js",
         "type": "JS_LAMBDA",
@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "MyFirstProject.js",
         "cursor": {
-          "lineNumber": 4,
-          "column": 51
+          "lineNumber": 2,
+          "column": 9
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -24,9 +24,9 @@
         },
         "triggers": [],
         "testCases": {
-          "57fd4b2a-c868-4fad-90cc-6d4578c5a2c2": {
-            "id": "57fd4b2a-c868-4fad-90cc-6d4578c5a2c2",
-            "functionId": "39b4522a-4396-4b53-a99b-f38e8baebd7d",
+          "0c84e9c3-2326-43b1-9788-f17317c69033": {
+            "id": "0c84e9c3-2326-43b1-9788-f17317c69033",
+            "functionId": "e97d3399-3f32-4af6-863d-b80a7fba791c",
             "name": "My First Test Case",
             "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
           }
@@ -34,9 +34,9 @@
       }
     },
     "openFiles": [
-      "39b4522a-4396-4b53-a99b-f38e8baebd7d"
+      "e97d3399-3f32-4af6-863d-b80a7fba791c"
     ],
-    "currentFileId": "39b4522a-4396-4b53-a99b-f38e8baebd7d",
+    "currentFileId": "e97d3399-3f32-4af6-863d-b80a7fba791c",
     "resources": {},
     "customTemplate": {
       "syntax": "JSON",
@@ -67,7 +67,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1602047412364
+    "lastSave": 1602048353948
   },
   "VCS_STATE": {
     "provider": "GitHub",
