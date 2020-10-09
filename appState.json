@@ -1,8 +1,8 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "e97d3399-3f32-4af6-863d-b80a7fba791c": {
-        "id": "e97d3399-3f32-4af6-863d-b80a7fba791c",
+      "d1513426-8e78-4197-b69a-b43f8a8fe56d": {
+        "id": "d1513426-8e78-4197-b69a-b43f8a8fe56d",
         "parent": null,
         "name": "MyFirstProject.js",
         "type": "JS_LAMBDA",
@@ -12,7 +12,7 @@
         "filePath": "MyFirstProject.js",
         "cursor": {
           "lineNumber": 2,
-          "column": 9
+          "column": 11
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -23,10 +23,11 @@
           "name": "MyFirstProject"
         },
         "triggers": [],
+        "lastUpdated": 1602238841888,
         "testCases": {
-          "0c84e9c3-2326-43b1-9788-f17317c69033": {
-            "id": "0c84e9c3-2326-43b1-9788-f17317c69033",
-            "functionId": "e97d3399-3f32-4af6-863d-b80a7fba791c",
+          "74a03f13-e323-42d7-b2c8-a084453ec51f": {
+            "id": "74a03f13-e323-42d7-b2c8-a084453ec51f",
+            "functionId": "d1513426-8e78-4197-b69a-b43f8a8fe56d",
             "name": "My First Test Case",
             "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
           }
@@ -34,9 +35,9 @@
       }
     },
     "openFiles": [
-      "e97d3399-3f32-4af6-863d-b80a7fba791c"
+      "d1513426-8e78-4197-b69a-b43f8a8fe56d"
     ],
-    "currentFileId": "e97d3399-3f32-4af6-863d-b80a7fba791c",
+    "currentFileId": "d1513426-8e78-4197-b69a-b43f8a8fe56d",
     "resources": {},
     "customTemplate": {
       "syntax": "JSON",
@@ -59,7 +60,7 @@
     }
   },
   "PROJECT_META": {
-    "sigmaVersion": "1.4.1.6",
+    "sigmaVersion": "1.4.4",
     "projectName": "MyFirstProject",
     "projectDescription": "My First Project",
     "projectVersion": "1.0.0",
@@ -67,7 +68,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1602048353948
+    "lastSave": 1602238892871
   },
   "VCS_STATE": {
     "provider": "GitHub",

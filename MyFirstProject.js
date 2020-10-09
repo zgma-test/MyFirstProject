@@ -1,4 +1,4 @@
-exports.handler = async (event) => {
-    //Hi
+export function handler(event) {
+    //test
     return {"message": "Successfully executed"};
-};
+}
